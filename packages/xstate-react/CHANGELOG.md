@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.4.0
+
+### Minor Changes
+
+- [`849ec56c`](https://github.com/davidkpiano/xstate/commit/849ec56c2a9db34e65a30af94e68a7a7a50b4158) [#2286](https://github.com/davidkpiano/xstate/pull/2286) Thanks [@davidkpiano](https://github.com/davidkpiano)! - The `useService(...)` hook will be deprecated, since services are also actors. In future versions, the `useActor(...)` hook should be used instead:
+
+  ```diff
+  -const [state, send] = useService(service);
+  +const [state, send] = useActor(service);
+  ```
+
 ## 1.3.4
 
 ### Patch Changes
